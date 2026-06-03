@@ -568,7 +568,7 @@ header.is-open .nav-toggle-icon::after {
     color: var(--coral);
 }
 
-.hero h2 {
+.hero-greeting {
     font-family: var(--sans);
     font-size: 2rem;
     font-weight: 600;
@@ -578,7 +578,7 @@ header.is-open .nav-toggle-icon::after {
     margin-bottom: 12px;
 }
 
-.hero h2 span {
+.hero-greeting span {
     color: var(--coral);
 }
 
@@ -1309,7 +1309,7 @@ section {
     transition: border-color 0.4s ease, background-color 0.4s ease;
 }
 
-.contact-info h3 {
+.contact-info h2 {
     font-family: var(--sans);
     font-size: 2.8rem;
     font-weight: 800;
@@ -1454,7 +1454,7 @@ footer p {
         margin-bottom: 16px;
     }
     
-    .hero h2 {
+    .hero-greeting {
         font-size: 1.7rem;
     }
     
@@ -1543,7 +1543,7 @@ footer p {
         gap: 24px;
     }
     
-    .contact-info h3 {
+    .contact-info h2 {
         font-size: 2.2rem;
     }
     
