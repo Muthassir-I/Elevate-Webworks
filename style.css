@@ -953,6 +953,15 @@ header.is-open .nav-toggle-icon::after {
     animation-play-state: paused;
 }
 
+@keyframes marquee-x {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 .wire-item {
     display: inline-flex;
     align-items: center;
@@ -1124,9 +1133,16 @@ section {
 /* ========== PRICING SECTION ========== */
 .pricing-grid.detailed-plans {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     align-items: stretch;
+}
+
+@media (max-width: 1200px) {
+    .pricing-grid.detailed-plans {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
 }
 
 .pricing-card.detailed {
